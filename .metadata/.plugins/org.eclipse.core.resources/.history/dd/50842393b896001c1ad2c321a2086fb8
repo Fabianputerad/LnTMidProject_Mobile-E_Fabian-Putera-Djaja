@@ -1,0 +1,101 @@
+package binus.ac.id.menu;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class input {
+	ArrayList<menu> view = new ArrayList<>();
+		Scanner scanner = new Scanner(System.in);
+		String Type, brand, name, TYPEK, license;
+		int top, gas, wheel, ent, helm;
+		menu Menu = new menu();
+	public void input() {
+		
+		System.out.print("Type: ");
+		Type = scanner.next();
+		Menu.setType(Type);
+		if(Type.equals("Car")||Type.equals("car")){
+			System.out.print("Brand: ");
+			brand = scanner.next();
+			Menu.setBrand(brand);
+			System.out.print("Name: ");
+			name = scanner.next();
+			Menu.setName(name);
+			System.out.print("License Plate: ");
+			license=scanner.next();
+			Menu.setLicense(license);
+			System.out.print("Top Speed [100-250]: ");
+			top = scanner.nextInt();
+			Menu.setTop(top);
+			if(top>=100 &&top<=250) {
+				System.out.print("Gas Capacity [30-60]: ");
+				gas =scanner.nextInt();
+				Menu.setGas(gas);
+				if(gas>=30 && gas<=60) {
+					System.out.print("Wheel [4-6]: ");
+					wheel = scanner.nextInt();
+					Menu.setWheel(wheel);
+					if(wheel>=4&&wheel<=6) {
+						System.out.print("Type [SUV | Supercar]: ");
+						TYPEK = scanner.next();
+						Menu.setTipenya(TYPEK);
+						System.out.print("Entertainment System: ");
+						ent=scanner.nextInt();
+					}
+				}
+				else {
+					System.out.println(" ");
+				}
+			}
+			else {
+				System.out.println(" ");
+			}
+		}
+		else if(Type.equals("Motorcycle")||Type.equals("motorcycle")){
+			System.out.print("Brand: ");
+			brand = scanner.next();
+			Menu.setBrand(brand);
+			System.out.print("Name: ");
+			name = scanner.next();
+			Menu.setName(name);
+			System.out.print("License Plate: ");							
+			license=scanner.next();
+			Menu.setLicense(license);
+			System.out.print("Top Speed [100-250]: ");
+			top = scanner.nextInt();
+			Menu.setTop(top);
+			if(top>=100 &&top<=250) {
+				System.out.print("Gas Capacity [30-60]: ");
+				gas =scanner.nextInt();								
+				Menu.setGas(gas);
+				if(gas>=30 && gas<=60) {
+					System.out.print("Wheel [2-4]: ");
+					wheel = scanner.nextInt();
+					Menu.setWheel(wheel);
+					if(wheel>=2&&wheel<=4) {
+						System.out.print("Type [Automatic | Manual]: ");
+						TYPEK = scanner.next();
+						Menu.setTipenya(TYPEK);										
+						System.out.print("Helm: ");
+						helm=scanner.nextInt();
+					}
+				}
+				else {
+					System.out.println(" ");
+				}
+			}
+			else {
+				System.out.println(" ");
+			}
+		view.add(Menu);
+		
+		}
+		
+	
+	}
+	public void data() {
+		for(int i=0;i<view.size();i++) {
+			System.out.println(""+view.get(i).getType());
+		}
+	}
+}

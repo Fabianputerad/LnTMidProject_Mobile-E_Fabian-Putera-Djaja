@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\darwi\OneDrive\Desktop\BINUS\BNCC\lnt\midProject\.metadata\.plugins\org.eclipse.jdt.core
+75931715.index
+1865797976.index
+1358694786.index

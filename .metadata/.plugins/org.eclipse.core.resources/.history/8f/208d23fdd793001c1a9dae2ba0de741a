@@ -1,0 +1,69 @@
+package binus.ac.id.menu;
+
+public abstract class menu {
+	
+	private String Type;
+	public void setType(String Type) {
+		this.Type=Type;
+	}
+	public String getType() {
+		return Type;
+	}
+	private String Brand;
+	public void setBrand(String Brand) {
+		this.Brand=Brand;
+	}
+	public String getBrand() {
+		return Brand;
+	}
+	private String Name;
+	public void setName(String Name) {
+		this.Name=Name;
+	}
+	public String Name() {
+		return Name;
+	}
+	private int License;
+	public void setLicense(int License) {
+		this.License=License;
+	}
+	public int getLicense() {
+		return License;
+	}
+	
+	private int Top;
+	public void setTop(int Top) {
+		this.Top=Top;
+	}
+	public int getTop() {
+		return Top;
+	}
+	private int Gas;
+	public void setGas(int Gas) {
+		this.Gas=Gas;
+	}
+	public int getGas() {
+		return Gas;
+	}
+	private int Wheel;
+	public void setWheel(int Wheel) {
+		this.Wheel=Wheel;
+	}
+	public int getWheel() {
+		return Wheel;
+	}
+	private String tipenya;
+	public void setTipenya(String tipenya) {
+		this.tipenya=tipenya;
+	}
+	public String getTipenya() {
+		return tipenya;
+	}
+	private int ent;
+	public void setEnt(int ent) {
+		this.ent=ent;
+	}
+	public int getInt() {
+		return ent;
+	}
+}

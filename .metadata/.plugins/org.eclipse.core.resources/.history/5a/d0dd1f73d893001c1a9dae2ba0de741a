@@ -1,0 +1,51 @@
+package binus.ac.id.menu;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public abstract class main extends menu {
+
+	
+
+	public static void main(String[] args) {
+		ArrayList<menu> view = new ArrayList<>();
+		Scanner scanner = new Scanner(System.in);
+		String Type, brand, name, TYPEK, license;
+		int top, gas, wheel, ent;
+		menu Menu = new menu();
+		
+		int n;
+		do {
+			System.out.println("1. Input");
+			System.out.println("2. View");
+			System.out.println("3. Exit");
+			System.out.print(">> ");
+			n = scanner.nextInt();
+			
+			switch(n) {
+				case 1 : 
+					System.out.print("Type: ");
+					Type = scanner.next();
+					Menu.setType(Type);
+					if(Type.equals("Car")||Type.equals("car")){
+						System.out.print("Brand: ");
+						brand = scanner.next();
+						Menu.setBrand(brand);
+						System.out.print("Name: ");
+						name = scanner.nextLine();
+					//	scanner.next();
+						System.out.print("License Plate: ");
+						license=scanner.next();
+						//scanner.next();
+						view.add(Menu);
+						break;
+					}
+					
+			}
+			
+		}while(n!=3);
+		
+		
+	}
+
+}

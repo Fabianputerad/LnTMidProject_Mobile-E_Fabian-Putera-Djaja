@@ -1,0 +1,7 @@
+package binus.ac.id.menu;
+
+public class motor {
+	public void harga(int helm) {
+		
+	}
+}

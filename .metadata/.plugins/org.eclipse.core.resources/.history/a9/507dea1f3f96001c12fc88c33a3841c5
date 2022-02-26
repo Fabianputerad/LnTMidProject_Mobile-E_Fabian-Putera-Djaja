@@ -1,0 +1,9 @@
+package binus.ac.id.menu;
+
+public class mobil extends menu {
+	public void pinjemMobil(String tipenya) {
+		if(tipenya.equals("SUV")) {
+			System.out.println("");
+		}
+	}
+}

@@ -1,0 +1,5 @@
+package binus.ac.id.menu;
+
+public abstract class menu {
+
+}
